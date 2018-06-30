@@ -2,9 +2,22 @@ var human={
 	species : "human",
 	create : function(values) {
 		var instance = Object.create(this);
-		console.log(instance);
-		Object.keys(values).foreach(function( key ){
+		//key are the attributes and values[key] the value of each attribute
+		Object.keys(values).forEach(function( key ){
 			instance[key] = values[key];
+			/*
+			There are two ways to add new properties to an object:
+				var obj = {
+    				key1: value1,
+    				key2: value2
+				};
+			
+			Using dot notation:
+				obj.key3 = "value3";
+
+			Using square bracket notation:
+				obj["key3"] = "value3";
+			*/
 		});
 		return instance;
 	},
@@ -13,7 +26,7 @@ var human={
 };
 
 var musician = human.create({
-	species : "musician",
+	job : "musician",
 	playinstrument: function(){ return this.instrument; }
 });
 

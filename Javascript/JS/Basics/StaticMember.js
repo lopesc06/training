@@ -1,5 +1,5 @@
 /*
-If you want method or a attributer to be shared by 
+If you want method or a attribute to be shared by 
 all instances then make it a static member otherwise make it an instance member.
 */
 function Shape(shapeName) 
