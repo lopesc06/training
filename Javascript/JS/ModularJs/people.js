@@ -2,7 +2,7 @@
 var people = (function(){
     var people = ['Will', 'Steve'];
 
-    //cache DOM
+    //cache DOM 
     var $el = $('#peopleModule');
     var $button = $el.find('button');
     var $input = $el.find('input');
